@@ -10,7 +10,7 @@ class Manifold < Formula
   on_macos do
     on_intel do
       url "https://github.com/blvrd/manifold/releases/download/v0.1.0/manifold_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ef8023cc508fa34a80677458a0fdaf93166ceeb6d4d47bc8e99e90ab4bfb415a"
+      sha256 "8b0764f1d8dd6a38a43486714d7798e6590769d445471bf0d5344cb57a663a55"
 
       def install
         bin.install "manifold"
@@ -18,7 +18,7 @@ class Manifold < Formula
     end
     on_arm do
       url "https://github.com/blvrd/manifold/releases/download/v0.1.0/manifold_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c065b410041041f0f8249330c7a07b37060cf41b2730db65e1596097c3fd8289"
+      sha256 "163d0cdb93973490715acddd902e94e6a93b92b67430c307bd6d451c0985c145"
 
       def install
         bin.install "manifold"
@@ -30,7 +30,7 @@ class Manifold < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/blvrd/manifold/releases/download/v0.1.0/manifold_0.1.0_linux_amd64.tar.gz"
-        sha256 "9aab11b7ce77e80e8246d8a10803722c79c550b5466d916843f2eb08382f7a84"
+        sha256 "e2990f693501a6f399c129f1c4c0c44e55d4f65e54a05583b41b1823f7ca8bce"
 
         def install
           bin.install "manifold"
@@ -40,7 +40,7 @@ class Manifold < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/blvrd/manifold/releases/download/v0.1.0/manifold_0.1.0_linux_arm64.tar.gz"
-        sha256 "a410fa8909d52e09d28199850b927e57c98419080e354d5678631aa3527aa171"
+        sha256 "af10f86dc29a7e2c4ffe11ddda5bb372c885a18e0371fbec7b74de8779dac3a4"
 
         def install
           bin.install "manifold"
