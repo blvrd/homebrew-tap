@@ -5,20 +5,20 @@
 class Manifold < Formula
   desc "Simple Procfile-based process manager"
   homepage "https://github.com/blvrd/manifold"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/blvrd/manifold/releases/download/v0.1.3/manifold_0.1.3_darwin_amd64.tar.gz"
-      sha256 "0b76feba32ff3d6585f9213094ac28d1231bbf7768c88fc329cfe6a56ecc60c8"
+      url "https://github.com/blvrd/manifold/releases/download/v0.1.4/manifold_0.1.4_darwin_amd64.tar.gz"
+      sha256 "468cebfa492a481c9e693adf406c18f5ba29f6d79f2f261310440c51ee3be165"
 
       def install
         bin.install "manifold"
       end
     end
     on_arm do
-      url "https://github.com/blvrd/manifold/releases/download/v0.1.3/manifold_0.1.3_darwin_arm64.tar.gz"
-      sha256 "c8008359d8bdf4e946dcd3d7e3ad39b08aae018a9e9a0b647fc0450ba437812d"
+      url "https://github.com/blvrd/manifold/releases/download/v0.1.4/manifold_0.1.4_darwin_arm64.tar.gz"
+      sha256 "80ccded12a0e0bf80e87c7ade0801f83637de2b6625937a951413ecd68a0b1c9"
 
       def install
         bin.install "manifold"
@@ -29,8 +29,8 @@ class Manifold < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/blvrd/manifold/releases/download/v0.1.3/manifold_0.1.3_linux_amd64.tar.gz"
-        sha256 "53238000a85c3d34956bdd57dd27bc31cc5a99f5a5d861002d1530a3829286c5"
+        url "https://github.com/blvrd/manifold/releases/download/v0.1.4/manifold_0.1.4_linux_amd64.tar.gz"
+        sha256 "ce3f1ddcec527a65d4999afda2458aa5c3238edc098f3a464e5a2dca7bbc116b"
 
         def install
           bin.install "manifold"
@@ -39,8 +39,8 @@ class Manifold < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/blvrd/manifold/releases/download/v0.1.3/manifold_0.1.3_linux_arm64.tar.gz"
-        sha256 "b739f1c413f60a374f6a23adab9644ef14bc143a4f51108773a4ec17074d6863"
+        url "https://github.com/blvrd/manifold/releases/download/v0.1.4/manifold_0.1.4_linux_arm64.tar.gz"
+        sha256 "072049ba024291ed94e907aa6e7cbf365735572bf4d4a30192dea20097a550b6"
 
         def install
           bin.install "manifold"
